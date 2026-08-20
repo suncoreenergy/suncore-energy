@@ -1,0 +1,15 @@
+{
+  "name": "suncore-website",
+  "version": "1.0.0",
+  "description": "SunCore Energy static site with a contact endpoint",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.0"
+  }
+}
