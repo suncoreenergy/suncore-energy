@@ -1,0 +1,90 @@
+/* Local overrides for preview */
+
+/* Button arrow color consistency */
+.button span{color:inherit}
+.button.button-dark span{color:var(--cream)}
+
+/* Header phone styling (prominent but subtle) */
+.header-phone{display:inline-flex;align-items:center;gap:10px;margin-left:18px;padding:6px 10px;background:transparent;color:var(--yellow);border-radius:8px;text-decoration:none;font-weight:800;font-size:15px;border:1px solid rgba(246,174,32,.12)}
+.header-phone svg{width:18px;height:18px;flex:0 0 18px;fill:currentColor}
+.header-phone .hp-number{display:inline-block}
+@media(max-width:800px){
+  .header-phone{font-size:14px;padding:6px 8px;margin-left:10px}
+}
+
+/* Hero phone display */
+.hero-phone{margin-top:18px;font-weight:800;color:var(--cream);background:rgba(6,46,95,.12);display:inline-block;padding:8px 12px;border-radius:6px}
+
+/* Partner track spacing fixes */
+.partner-track{gap:12px}
+@media(max-width:800px){
+  .partner-track{gap:8px;animation-duration:40s}
+  .partner-logo{margin:0 6px}
+}
+
+/* Make hero action text-link visible on small screens */
+@media(max-width:800px){
+  .hero .text-link{color:var(--ink);background:var(--cream);padding:6px 10px;border-radius:6px;border-bottom:none}
+}
+
+/* On small screens keep the hero art but push it to the background */
+@media(max-width:800px){
+  .hero-art{display:block;position:absolute;right:-10%;top:30%;width:120%;height:auto;opacity:.28;z-index:0;pointer-events:none;transform:scale(.95)}
+  .hero-copy{position:relative;z-index:2}
+  /* Ensure mobile nav shows dark background and light links (override injected styles) */
+  .site-header nav.is-open{background:var(--ink) !important;top:78px !important;border-bottom:1px solid rgba(247,247,247,.14) !important}
+  .site-header nav.is-open a{color:var(--cream) !important}
+}
+
+/* Overlay over hero-art on small screens to improve contrast (approx 55% opacity) */
+@media(max-width:800px){
+  /* overlay: darker brand yellow at 10% opacity */
+  .hero::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.20);z-index:1;pointer-events:none}
+  .hero{position:relative}
+}
+
+/* Ensure round-link arrow color */
+.round-link span{color:var(--ink)}
+
+/* New hero Suncor styles */
+.suncor-block{margin-bottom:6px}
+.hero{overflow:visible}
+.hero-copy{position:relative;z-index:12}
+.suncor-block{position:relative;z-index:13}
+.suncor-main{font-size:clamp(2.4rem,6vw,4rem);font-weight:900;color:#ffffff !important;margin:0;line-height:1;text-shadow:0 10px 28px rgba(6,46,95,0.36);opacity:1 !important}
+
+/* Desktop: nudge hero art and sun slightly up so the workings are visible without clipping */
+@media(min-width:1000px){
+  /* lower the hero art and sun so they don't overlap the SUNCOR heading */
+  .hero-art{top:18% !important;right:4vw !important}
+  .solar-sun{top:22% !important;left:20% !important}
+  /* ensure hero copy sits below the header without overlapping */
+  .hero{padding-top:120px}
+  /* push SUNCOR heading down to avoid overlap with hero art/header */
+  /* push SUNCOR further down as requested */
+  /* push SUNCOR further down as requested */
+  .suncor-block{margin-top:220px !important}
+}
+.suncor-sub{font-size:clamp(1.2rem,3vw,1.8rem);font-weight:900;color:var(--yellow);margin:6px 0 0;letter-spacing:.08em}
+
+/* Ensure header phone is visible in the header */
+.site-header nav{flex:1}
+.header-phone{display:inline-flex !important;align-items:center;gap:10px;padding:6px 10px;background:transparent;color:var(--yellow);border-radius:8px;text-decoration:none;font-weight:800;font-size:15px;border:1px solid rgba(246,174,32,.12);margin-right:12px}
+.header-phone svg{width:18px;height:18px;flex:0 0 18px;fill:currentColor}
+.header-phone .hp-number{display:inline-block;margin-left:6px}
+@media(max-width:800px){
+  .header-phone{margin-right:8px;font-size:14px;padding:6px 8px}
+}
+
+/* Increase header logo size (override) */
+.brand img{width:380px !important;height:auto !important}
+
+/* Footer phone styling */
+.footer-phone{margin-top:10px;font-weight:800}
+.footer-phone a{color:var(--yellow);text-decoration:none}
+
+@media(max-width:800px){
+  .site-header{position:relative}
+  .header-phone{position:absolute;right:80px;top:50%;transform:translateY(-50%);z-index:6}
+  .menu-button{position:relative;z-index:7}
+}

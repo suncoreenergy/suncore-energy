@@ -10,4 +10,18 @@ body{background:var(--cream);color:var(--ink);letter-spacing:-.01em}.cursor-glow
 .estimator-form .consent{display:flex;align-items:flex-start;gap:9px;font:500 11px/1.5 var(--sans);letter-spacing:0;margin:25px 0 0}.estimator-form .consent input{width:auto;margin:2px 0 0;accent-color:var(--yellow)}.estimator-form .consent a{color:var(--ink);font-weight:700}
 .process{background:#f0e9dc}.statement{background:var(--ink)}.statement-orb{border-color:rgba(246,174,32,.4);box-shadow:0 0 0 55px rgba(246,174,32,.06),0 0 0 130px rgba(246,174,32,.03)}.button-light{background:var(--yellow);border-color:var(--yellow);color:var(--ink)}.sun-art{background:var(--yellow)}.sun-art:after{color:var(--cream)}.grid-art{background-color:var(--ink);background-image:linear-gradient(30deg,transparent 48%,rgba(246,174,32,.55) 49%,rgba(246,174,32,.55) 51%,transparent 52%),linear-gradient(90deg,transparent 48%,rgba(246,174,32,.55) 49%,rgba(246,174,32,.55) 51%,transparent 52%)}.grid-art:after{border-color:var(--yellow)}.bolt-art{background:var(--yellow)}
 footer{background:var(--ink)}.footer-brand{display:flex;width:220px;height:120px;align-items:center}.footer-brand img{width:220px;height:120px;max-width:100%;object-fit:contain;transform:none}.round-link{background:var(--yellow)}dialog{background:var(--cream)}dialog h2{font-family:var(--serif);font-weight:600}dialog h2 em{font-style:normal;color:var(--yellow)}
+/* Partner track spacing adjustments to avoid overlap on small screens */
+.partner-track{gap:12px}
+@media(max-width:800px){
+	.partner-track{gap:8px;animation-duration:40s}
+	.partner-logo{margin:0 6px}
+}
+
+/* Ensure hero text-link is visible on smaller screens */
+@media(max-width:800px){
+	.hero .text-link{color:var(--ink);background:var(--cream);padding:6px 10px;border-radius:6px;border-bottom:none}
+}
+
+/* Footer links: link Instagram correctly and ensure round-link arrow color */
+.round-link span{color:var(--ink)}
 @media(max-width:800px){.site-header{height:78px}.site-header nav.is-open{top:78px;background:var(--ink);border-color:rgba(247,247,247,.14)}.site-header nav.is-open a{color:var(--cream)}.brand{width:160px;height:62px}.brand img{width:160px;height:62px;transform:none}.footer-brand{width:170px;height:100px}.footer-brand img{width:170px;height:100px}.partner-strip{padding:32px 0}.partner-logo{width:155px;height:46px;margin:0 8px}.partner-logo img{max-width:120px;max-height:38px}}
