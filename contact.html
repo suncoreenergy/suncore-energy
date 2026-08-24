@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact SunCore Energy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="brand.css" />
+    <style>
+      body { background: radial-gradient(circle at top, rgba(246,174,32,.14), transparent 32%), #07080c; color: #f7f7f7; }
+      .site-header{background:#07080c;border-bottom:1px solid rgba(247,247,247,.14)}
+      .contact-shell { max-width: 1180px; margin: 0 auto; padding: 130px 7vw 90px; }
+      .contact-header { margin-bottom: 42px; }
+      .contact-header .eyebrow { color: #f6ae20; margin-bottom: 0; }
+      .contact-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 32px; }
+      .contact-card, .contact-details { background: rgba(17,18,21,.88); border: 1px solid rgba(246,174,32,.18); border-radius: 22px; padding: 30px; box-shadow: 0 18px 38px rgba(0,0,0,.18); }
+      .contact-card h1, .contact-details h2 { font-family: 'Sora', sans-serif; letter-spacing: -0.06em; margin: 0 0 18px; }
+      .contact-card h1 { font-size: clamp(2.8rem, 5vw, 5.2rem); line-height: 0.92; color: #f7f7f7; }
+      .contact-card p, .contact-details p, .contact-details a { font-size: 1rem; line-height: 1.7; color: rgba(247,247,247,.82); }
+      .contact-card p { max-width: 62ch; }
+      .contact-details h2 { color: #f6ae20; font-size: clamp(1.7rem, 3vw, 2.7rem); }
+      .contact-details a { text-decoration: none; font-weight: 700; color: #f7f7f7; }
+      .contact-details a:hover { color: #f6ae20; }
+      .contact-list { display: grid; gap: 18px; margin-top: 20px; }
+      .contact-item { display: flex; flex-direction: column; gap: 6px; padding: 16px 18px; border-radius: 14px; background: rgba(247,247,247,.02); border: 1px solid rgba(247,247,247,.08); }
+      .contact-item span { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #f6ae20; font-weight: 700; }
+      .contact-item strong { font-size: 1.15rem; color: #f7f7f7; }
+      .site-header .header-call{color:#f6ae20}.site-header nav a{color:#f7f7f7}.site-header .button{background:#f6ae20;border-color:#f6ae20;color:#07080c}
+      @media (max-width: 800px) {
+        .contact-shell { padding-top: 110px; }
+        .contact-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="brand" aria-label="Suncor Energy home"><img src="Logo Layer Breakdown-2.png" alt="Suncor Energy" /></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#solutions">Solutions</a><a href="index.html#why-us">Why SunCore</a><a href="index.html#process">The process</a><a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:1800786267" class="header-call" aria-label="Call SunCore Energy on 1800 786 267">
+          <span class="phone-icon">☎</span>
+          <span>1800 786 267</span>
+        </a>
+        <a href="index.html#estimate" class="button button-small">Request a free quote <span>↗</span></a>
+      </div>
+      <button class="menu-button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </header>
+
+    <main class="contact-shell">
+      <div class="contact-header">
+        <p class="eyebrow"><span></span> CONTACT US</p>
+      </div>
+
+      <div class="contact-grid">
+        <section class="contact-card">
+          <h1>Let’s talk about your next energy move.</h1>
+          <p>We help homeowners and businesses design smarter solar, battery and EV charging solutions that fit the way they live and work.</p>
+        </section>
+
+        <aside class="contact-details">
+          <h2>Reach us</h2>
+          <div class="contact-list">
+            <div class="contact-item">
+              <span>Phone</span>
+              <strong><a href="tel:1800786267">1800 786 267</a></strong>
+            </div>
+            <div class="contact-item">
+              <span>Email</span>
+              <strong><a href="mailto:info@suncoreenergy.au">info@suncoreenergy.au</a></strong>
+            </div>
+            <div class="contact-item">
+              <span>Instagram</span>
+              <strong><a href="https://www.instagram.com/suncorenergy.au/" target="_blank" rel="noreferrer">@suncorenergy.au</a></strong>
+            </div>
+            <div class="contact-item">
+              <span>Hours</span>
+              <strong>Mon–Fri, 8:30am–5:30pm AEST</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>
