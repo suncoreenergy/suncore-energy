@@ -1,11 +1,19 @@
 /* Responsive overrides and mobile polish — non-destructive, scoped to narrow viewports. */
 
 /* Desktop tweaks kept minimal and compatible with existing styles */
+/* Desktop header phone styling */
+.header-phone{display:inline-flex;align-items:center;gap:10px;padding:8px 10px;background:transparent;color:var(--yellow);border-radius:8px;text-decoration:none;font-weight:800;font-size:15px;border:1px solid rgba(246,174,32,.12);margin-right:12px}
+.header-phone svg{width:18px;height:18px;flex:0 0 18px;fill:currentColor}
+.header-phone .hp-number{display:inline-block;margin-left:6px}
+
 @media (min-width:1000px) {
   .hero-copy { width: 60% !important; }
   .hero-actions { flex-wrap: nowrap; gap: 28px; }
   /* bring the proof block closer on desktop */
   .hero-proof { margin-top: 20px; z-index: 4; position: relative; }
+  /* ensure SUNCOR heading is visible below the header */
+  .hero{padding-top:140px}
+  .suncor-block{margin-top:0;margin-bottom:6px;position:relative;z-index:13}
   .scroll-prompt { z-index: 2; }
   @media (min-width:1400px) {
     .hero { min-height: 880px; }
