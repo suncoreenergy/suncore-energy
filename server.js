@@ -28,7 +28,7 @@ app.post('/api/contact', async (req, res) => {
     if (!toAddress) return res.status(500).json({ error: 'Server not configured with recipient email' });
 
     const message = {
-      from: process.env.SMTP_FROM || 'no-reply@suncorenergy.au',
+      from: process.env.SMTP_FROM || 'no-reply@suncore.local',
       to: toAddress,
       subject: `New quote request from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nPlanning: ${planning}\nPostcode: ${postcode}\nBill: ${bill}\nConsent: ${consent}`,
