@@ -20,6 +20,15 @@
   }
 }
 
+/* Header layout for desktop: center nav, right-side actions */
+@media (min-width:1000px) {
+  .site-header{display:flex;align-items:center;gap:20px;padding:18px 4.6vw}
+  .site-header nav{flex:1;display:flex;justify-content:center;gap:30px}
+  .header-actions{display:flex;align-items:center;gap:12px}
+  .header-phone{padding:8px 10px;font-size:14px}
+  .button.button-small{padding:10px 14px}
+}
+
 /* ===== Mobile (<= 430px) ===== */
 @media (max-width: 430px) {
   /* Header: left logo, middle phone, right hamburger — flexible, no absolute positioning */
