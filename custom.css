@@ -4,7 +4,8 @@
 @media (min-width:1000px) {
   .hero-copy { width: 60% !important; }
   .hero-actions { flex-wrap: nowrap; gap: 28px; }
-  .hero-proof { margin-top: 40px; z-index: 4; position: relative; }
+  /* bring the proof block closer on desktop */
+  .hero-proof { margin-top: 20px; z-index: 4; position: relative; }
   .scroll-prompt { z-index: 2; }
   @media (min-width:1400px) {
     .hero { min-height: 880px; }
@@ -46,8 +47,8 @@
   .hero-actions .button{width:100%;padding:12px 14px;font-size:12px;min-height:44px;justify-content:center}
   .hero-actions .text-link{width:100%;text-align:center;padding:10px 12px;border-radius:8px}
 
-  /* Proof block should sit below actions and never overlap scroll prompt */
-  .hero-proof{display:flex;flex-direction:row;align-items:center;gap:10px;margin-top:18px;z-index:3}
+  /* Proof block should sit close below actions and never overlap scroll prompt */
+  .hero-proof{display:flex;flex-direction:row;align-items:center;gap:10px;margin-top:8px;z-index:3}
   .avatar-stack b{width:30px;height:30px;margin-left:-8px}
 
   /* Scroll prompt: keep visible and not overlapped */
@@ -88,6 +89,8 @@
   .hero-actions{flex-direction:row;flex-wrap:wrap;gap:14px}
   .partner-track{gap:18px}
   .partner-logo{flex:0 0 24%;max-width:160px}
+  /* slightly tighter proof spacing on tablet */
+  .hero-proof{margin-top:12px}
 }
 
 /* Safety: ensure no element is wider than viewport in any case */
